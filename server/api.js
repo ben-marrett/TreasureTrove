@@ -1,13 +1,15 @@
 const express = require('express');
-
+const router = express.Router();
 // Sample data
-const treasureData = require('./treasure.json');
+const treasureData = require('../treasure.json');
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   res.send('Hello, World!')
 })
 
 // API endpoints
+
+//Get all items
 router.get('/items', (req, res) => {
   res.json(treasureData)
 })
@@ -24,7 +26,7 @@ router.get('/items/:id', (req, res) => {
   res.json(item)
 })
 
-// POST endpoint to create a new item
+// POST a new item
 router.post('/items', (req, res) => {
   // Here, you can handle creating a new item based on the request body
   // Replace this with your actual logic
