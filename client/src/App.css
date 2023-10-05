@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+/* Basic styling for the navigation bar */
+nav {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  font-size: 18px; /* Font size */
+}
+
+nav ul {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Display links horizontally */
+  justify-content: center; /* Center-align links */
+}
+
+nav li {
+  margin: 0 20px; /* Add spacing between links */
+}
+
+/* Style for navigation links */
+nav a {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Text color */
+  transition: color 0.2s; /* Smooth color transition on hover */
+
+  /* Optional: Add hover effect */
+  &:hover {
+    color: #ff5722; /* Hover color */
+  }
+}
+
+/* Style for the active link */
+nav a.active {
+  font-weight: bold; /* Bold text for active link */
+}
+
+/* Welcome section */
+/* In your App.css or a separate CSS file */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2c3e50; /* Deep blue background color */
+  font-family: 'Arial', sans-serif;
+}
+
+.Welcome {
+  text-align: center;
+  padding: 100px 0;
+  color: #ecf0f1; /* Light gray text color */
+}
+
+.Welcome h1 {
+  font-size: 3rem;
+  font-family: 'Cursive', cursive;
+  color: #e74c3c; /* Pirate red text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+}
+
+.Welcome p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Add any additional styling as needed */
