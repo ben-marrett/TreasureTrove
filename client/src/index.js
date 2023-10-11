@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { initializeApp } from 'firebase/app';
 import { getAnalytics } from 'firebase/analytics';
-import firebaseConfig from './firebaseConfig';
+import firebaseConfig from './config/firebaseConfig';
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+console.log('Firebase Project ID:', firebaseConfig.projectId)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
